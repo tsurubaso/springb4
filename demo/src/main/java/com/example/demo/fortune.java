@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class fortune {
     @RequestMapping("/fortune")
-    public String start() {
+    public String start2() {
         double fn = Math.random();
         if (fn >= 0.7) {
             return "greatFortune.html";
