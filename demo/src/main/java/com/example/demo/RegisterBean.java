@@ -6,7 +6,7 @@ import lombok.Setter;
 @Setter
 
 
-public class RegisteredBean {
+public class RegisterBean {
   private String name;
   private String age;
 

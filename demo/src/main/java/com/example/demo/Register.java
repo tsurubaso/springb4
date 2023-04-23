@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.support.RegisteredBean;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,9 @@ public class Register {
         return "input.html";
     }
     @RequestMapping("/register")
+@ModelAttribute
     public ModelAndView register
-    (@ModelAttribute RegisteredBean rb,ModelAndView m){
+    ( RegisterBean rb,ModelAndView m){
 
         m.addObject("rb", rb);
         m.setViewName("register.html");
